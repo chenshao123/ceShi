@@ -1,0 +1,55 @@
+$fontSize:32;
+  @function px2Rem ($px){
+    @return $px/$fontSize + rem;
+}
+
+@mixin marginpadding{
+  width:100%;
+  height:100%;
+}
+
+tops{
+  background: red;
+}
+
+%webapp{
+  background: #ccc;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  @include marginpadding;
+}
+.container{
+  @include marginpadding;
+  display:flex;
+  overflow: hidden;
+  flex-flow:column;
+  .headers{
+    width:100%;
+    height:px2Rem(50);
+    @extend tops;
+    div{
+      width:px2Rem(100);
+      height:100%;
+      float: left;
+      margin-right:px2Rem(4);
+      @extend %webapp;
+    }
+  }
+  .content{
+    flex: 1;
+    overflow-y: auto;
+    width:100%;
+    font:bold 14px/20px "宋体";
+  }
+  .content::-webkit-scrollbar{
+    display: none;
+  }
+  .footers{
+    width:100%;
+    height:50px;
+    background: green;
+  }
+}

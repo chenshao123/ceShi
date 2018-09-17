@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  .box{
+    width:200px;
+    height:200px;
+    background: aqua;
+    overflow: hidden;
+    border:1px solid red;
+    border-radios:100px 10px    ;
+  }
+  .boxs{
+    width:100px;
+    height:100px;
+    background: yellow;
+    margin-top: 10px;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="boxs">sss</div>
+  </div>
+  <script>
+    var boxs = document.getElementsByClassName("boxs")[0];
+    var aa = boxs.innerHTML;
+    console.log(aa)
+  </script>
+</body>
+</html>

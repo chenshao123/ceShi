@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+#index {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-comtent: flex-start; }
+  #index header {
+    width: 100%;
+    height: 1.6rem;
+    background: yellow; }
+  #index section {
+    flex: 1;
+    overflow-y: auto;
+    width: 100%;
+    background: pink; }
+  #index footer {
+    width: 100%;
+    height: 1.6rem;
+    background: yellow;
+    font-size: 18px; }
+
+/*# sourceMappingURL=index.css.map */
